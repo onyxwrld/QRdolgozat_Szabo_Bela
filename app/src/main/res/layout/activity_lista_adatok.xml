@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listaAdatok"
+    android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/linForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewID"
+        tools:listitem="@layout/person_list_adapter"
+        />
+        <EditText
+            android:id="@+id/nameID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Név"
+            android:inputType="textPersonName"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/idID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="25sp"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/gradeID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jegy"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/modifyID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Módosítás"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/backID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mégse"
+            android:textSize="25sp" />
+    </LinearLayout>
+</LinearLayout>
